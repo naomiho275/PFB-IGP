@@ -17,11 +17,11 @@ def cashonhandcalc():
     - This function checks if the cash on hand on the current day is lower than the previous day 
     - This function will find the difference between the current and previous day cash on hand if the current day cash on hand is lower 
     """
-        filepath = Path.cwd()/ "project_group" / "summary_report.txt"
+        filepath = Path.cwd()/ "project_group" / "summary_report.txt"       
         filepath.touch()
         # using mode="a" to append into the txt file 
         with filepath.open(mode="a",encoding = "UTF-8") as file :
-    # creating an empty list and assigning it to the variable cash_deficit 
+    # creates an empty list and assigning it to the variable cash_deficit 
             cash_deficit=[]
             # using a for loop to loop the data from the range of 1, length of the day_cashonhand list 
             for day in range(1,len(day_cashonhand)):
