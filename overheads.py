@@ -23,7 +23,7 @@ def overheadscalc():
                 # assigning the category name to the variable 
                 highest_category = data[0].upper()
         # creating a txt file            
-        fp_cwd = Path.cwd() / "project_group" / "summary_report.txt" 
+        fp_cwd = Path.cwd() / "project_group" / "summary_report.txt"
         fp_cwd.touch()
         # writing the statement of highest overhead into the txt file
         with fp_cwd.open(mode="w", encoding="UTF-8") as file:
